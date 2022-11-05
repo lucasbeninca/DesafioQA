@@ -7275,7 +7275,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cypress/integration/3-zitrus/DesafioQA" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -7315,7 +7315,7 @@
       <workItem from="1667646429713" duration="13159000" />
       <workItem from="1667663736922" duration="482000" />
       <workItem from="1667664273625" duration="5004000" />
-      <workItem from="1667679303276" duration="546000" />
+      <workItem from="1667679303276" duration="861000" />
     </task>
     <servers />
   </component>
