@@ -1,32 +1,28 @@
 {
 	"info": {
 		"_postman_id": "544cf508-b786-4c71-9917-5ef97639644e",
-		"name": "TestesAPI-GitHub",
+		"name": "DesafioQA-API-Postman",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "2785648"
 	},
 	"item": [
 		{
-			"name": "ChamandoApiGitHub",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{urlgit}}/users/lucasbeninca/repos",
-					"host": [
-						"{{urlgit}}"
-					],
-					"path": [
-						"users",
-						"lucasbeninca",
-						"repos"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "CriandoUmRepositorio",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Verificar se o status code foi 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -54,19 +50,32 @@
 		},
 		{
 			"name": "ConsultandoRepositorioCriado",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar se o status code foi 201\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{urlgit}}/users/user/repos/",
+					"raw": "{{urlgit}}/repos/lucasbeninca/Desafio-API-QA",
 					"host": [
 						"{{urlgit}}"
 					],
 					"path": [
-						"users",
-						"user",
 						"repos",
-						""
+						"lucasbeninca",
+						"Desafio-API-QA"
 					]
 				}
 			},
@@ -74,6 +83,20 @@
 		},
 		{
 			"name": "DeletandoRepositorio",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Verificar se o status code foi 201\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -97,7 +120,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "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",
+				"value": "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",
 				"type": "string"
 			}
 		]
