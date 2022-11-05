@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "544cf508-b786-4c71-9917-5ef97639644e",
+		"name": "TestesAPI-GitHub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2785648"
+	},
+	"item": [
+		{
+			"name": "ChamandoApiGitHub",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlgit}}/users/lucasbeninca/repos",
+					"host": [
+						"{{urlgit}}"
+					],
+					"path": [
+						"users",
+						"lucasbeninca",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CriandoUmRepositorio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Desafio-API-QA\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{urlgit}}/user/repos",
+					"host": [
+						"{{urlgit}}"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultandoRepositorioCriado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlgit}}/users/user/repos/",
+					"host": [
+						"{{urlgit}}"
+					],
+					"path": [
+						"users",
+						"user",
+						"repos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletandoRepositorio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{urlgit}}/repos/lucasbeninca/Desafio-API-QA",
+					"host": [
+						"{{urlgit}}"
+					],
+					"path": [
+						"repos",
+						"lucasbeninca",
+						"Desafio-API-QA"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "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",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token-api",
+			"value": "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",
+			"type": "string"
+		},
+		{
+			"key": "urlgit",
+			"value": "https://api.github.com",
+			"type": "string"
+		}
+	]
+}
