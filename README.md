@@ -16,3 +16,5 @@
 **Configurações utilizadas para automação com Postman**
 - Foi utilizado Postman na versão 10.1.1, o mesmo pode ser baixado no seguinte link: https://www.postman.com/downloads/?utm_source=postman-home
 - O projeto de autmoação do Postman está no repositório acima, dentro da pasta zitrus-postman
+- Bastar ir em Colletions no postman clciar em importar - pegar o arquvio *DesafioQA-API-Postman-GitHub.postman_collection.json*, e clicar em importar, escolher o arquvio e clicar em importar novamente.
+- Feito o passo acima, será necessário autalizar o Token de autenticação com o Github, para que o postman possa acessar a APo, para isso, é necessário abrir a colletion na aba authorization, verificar que existe um Bearer Token e inserir o token que enviei, no corpo do e-mail, o mesmo não foi enviado automaticamente com, o projeto, pois o Github valida os tokens que estão presentes no código fonte e revoga automaticamente, assim que o commit é feito.
